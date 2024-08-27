@@ -1,0 +1,333 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|c:\\users\\usuario\\source\\repos\\demoproyoficial\\demoproy1\\views\\proyectoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\proyectoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\models\\tribunal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:models\\tribunal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\defensainterna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\defensainterna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\proyectoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\proyectoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\controllers\\proyectocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:controllers\\proyectocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\controllers\\postulantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:controllers\\postulantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\tutoresytutorados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\tutoresytutorados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\reporteproyectos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\reporteproyectos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\estudiantespendientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\estudiantespendientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\postulanteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\postulanteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\perfilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\perfilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\perfilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\perfilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\views\\postulanteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:views\\postulanteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\models\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:models\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28C15B5-79CD-4CED-B72F-11EA2A589846}|DEMOPROY1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 259,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tribunal.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Models\\Tribunal.cs",
+              "RelativeDocumentMoniker": "Models\\Tribunal.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Models\\Tribunal.cs",
+              "RelativeToolTip": "Models\\Tribunal.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T20:10:25.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProyectoController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Controllers\\ProyectoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProyectoController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Controllers\\ProyectoController.cs",
+              "RelativeToolTip": "Controllers\\ProyectoController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:59:52.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProyectoForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\ProyectoForm.cs",
+              "RelativeDocumentMoniker": "VIews\\ProyectoForm.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\ProyectoForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "VIews\\ProyectoForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:59:52.654Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProyectoForm.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\ProyectoForm.cs",
+              "RelativeDocumentMoniker": "VIews\\ProyectoForm.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\ProyectoForm.cs",
+              "RelativeToolTip": "VIews\\ProyectoForm.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAuwG8AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:59:52.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DEFENSAINTERNA.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\DEFENSAINTERNA.cs",
+              "RelativeDocumentMoniker": "VIews\\DEFENSAINTERNA.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\DEFENSAINTERNA.cs [Dise\u00F1o]",
+              "RelativeToolTip": "VIews\\DEFENSAINTERNA.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:59:52.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "INDEX.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\INDEX.cs",
+              "RelativeDocumentMoniker": "VIews\\INDEX.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\INDEX.cs",
+              "RelativeToolTip": "VIews\\INDEX.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAwCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PerfilController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Controllers\\PerfilController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PerfilController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Controllers\\PerfilController.cs",
+              "RelativeToolTip": "Controllers\\PerfilController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAwHoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:59:52.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PostulanteController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Controllers\\PostulanteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PostulanteController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Controllers\\PostulanteController.cs",
+              "RelativeToolTip": "Controllers\\PostulanteController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAgwHcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:59:52.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "INDEX.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\INDEX.cs",
+              "RelativeDocumentMoniker": "VIews\\INDEX.cs",
+              "ToolTip": "C:\\Users\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\INDEX.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\INDEX.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "REPORTEPROYECTOS.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\REPORTEPROYECTOS.cs",
+              "RelativeDocumentMoniker": "VIews\\REPORTEPROYECTOS.cs",
+              "ToolTip": "C:\\Users\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\REPORTEPROYECTOS.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\REPORTEPROYECTOS.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TUTORESYTUTORADOS.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\TUTORESYTUTORADOS.cs",
+              "RelativeDocumentMoniker": "VIews\\TUTORESYTUTORADOS.cs",
+              "ToolTip": "C:\\Users\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\TUTORESYTUTORADOS.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\TUTORESYTUTORADOS.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ESTUDIANTESPENDIENTES.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\ESTUDIANTESPENDIENTES.cs",
+              "RelativeDocumentMoniker": "VIews\\ESTUDIANTESPENDIENTES.cs",
+              "ToolTip": "C:\\Users\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\ESTUDIANTESPENDIENTES.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\ESTUDIANTESPENDIENTES.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PostulanteForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\PostulanteForm.cs",
+              "RelativeDocumentMoniker": "VIews\\PostulanteForm.cs",
+              "ToolTip": "C:\\Users\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\PostulanteForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\PostulanteForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PerfilForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\PerfilForm.cs",
+              "RelativeDocumentMoniker": "VIews\\PerfilForm.cs",
+              "ToolTip": "C:\\Users\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\PerfilForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\JHOEL PERALTA\\source\\repos\\DEMOPROY1\\VIews\\PerfilForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PerfilForm.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\PerfilForm.cs",
+              "RelativeDocumentMoniker": "VIews\\PerfilForm.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\PerfilForm.cs",
+              "RelativeToolTip": "VIews\\PerfilForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PostulanteForm.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\PostulanteForm.cs",
+              "RelativeDocumentMoniker": "VIews\\PostulanteForm.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\VIews\\PostulanteForm.cs",
+              "RelativeToolTip": "VIews\\PostulanteForm.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAADgv1sAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-08-26T19:59:52.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Proyecto.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Models\\Proyecto.cs",
+              "RelativeDocumentMoniker": "Models\\Proyecto.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Models\\Proyecto.cs",
+              "RelativeToolTip": "Models\\Proyecto.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:59:52.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\DEMOPROYOFICIAL\\DEMOPROY1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:59:52.716Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
