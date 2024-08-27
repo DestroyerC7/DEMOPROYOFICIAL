@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using _25_08_2024.Modelos;
+using DEMOPROY1.Models;
 using Microsoft.Data.SqlClient;
 
-namespace _25_08_2024.Controladores
+namespace DEMOPROY1.Controllers
 {
     public class TribunalController
     {
@@ -18,18 +18,18 @@ namespace _25_08_2024.Controladores
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO TRIBUNAL (PrimerNombreT, SegundoNombreT, PrimerApellidoT, SegundoApellidoT, Tipo, Institucion, Id_titulo) " +
-                               "VALUES (@PrimerNombreT, @SegundoNombreT, @PrimerApellidoT, @SegundoApellidoT, @Tipo, @Institucion, @Id_titulo)";
+                string query = "INSERT INTO TRIBUNAL (PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, Tipo, Institucion, Id_titulo) " +
+                               "VALUES (@PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @Tipo, @Institucion, @Id_titulo)";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@PrimerNombreT", tribunal.PrimerNombreT);
-                    cmd.Parameters.AddWithValue("@SegundoNombreT", (object)tribunal.SegundoNombreT ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@PrimerApellidoT", tribunal.PrimerApellidoT);
-                    cmd.Parameters.AddWithValue("@SegundoApellidoT", (object)tribunal.SegundoApellidoT ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@PrimerNombre", tribunal.PrimerNombre);
+                    cmd.Parameters.AddWithValue("@SegundoNombre", (object)tribunal.SegundoNombre ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@PrimerApellido", tribunal.PrimerApellido);
+                    cmd.Parameters.AddWithValue("@SegundoApellido", (object)tribunal.SegundoApellido ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Tipo", tribunal.Tipo);
                     cmd.Parameters.AddWithValue("@Institucion", tribunal.Institucion);
-                    cmd.Parameters.AddWithValue("@Id_titulo", tribunal.Id_titulo);
+                    cmd.Parameters.AddWithValue("@Id_Titulo", tribunal.Id_Titulo);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -54,13 +54,13 @@ namespace _25_08_2024.Controladores
                         Tribunal tribunal = new Tribunal
                         {
                             Id_Tribunal = (int)reader["Id_Tribunal"],
-                            PrimerNombreT = (string)reader["PrimerNombreT"],
-                            SegundoNombreT = reader["SegundoNombreT"] as string,
-                            PrimerApellidoT = (string)reader["PrimerApellidoT"],
-                            SegundoApellidoT = reader["SegundoApellidoT"] as string,
+                            PrimerNombre = (string)reader["PrimerNombre"],
+                            SegundoNombre = reader["SegundoNombre"] as string,
+                            PrimerApellido = (string)reader["PrimerApellido"],
+                            SegundoApellido = reader["SegundoApellido"] as string,
                             Tipo = (string)reader["Tipo"],
                             Institucion = (string)reader["Institucion"],
-                            Id_titulo = (int)reader["Id_titulo"]
+                            Id_Titulo = (int)reader["Id_Titulo"]
                         };
                         tribunales.Add(tribunal);
                     }
@@ -76,20 +76,20 @@ namespace _25_08_2024.Controladores
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "UPDATE TRIBUNAL SET PrimerNombreT = @PrimerNombreT, SegundoNombreT = @SegundoNombreT, " +
-                               "PrimerApellidoT = @PrimerApellidoT, SegundoApellidoT = @SegundoApellidoT, Tipo = @Tipo, " +
+                string query = "UPDATE TRIBUNAL SET PrimerNombre = @PrimerNombre, SegundoNombre = @SegundoNombre, " +
+                               "PrimerApellido = @PrimerApellido, SegundoApellido = @SegundoApellido, Tipo = @Tipo, " +
                                "Institucion = @Institucion, Id_titulo = @Id_titulo WHERE Id_Tribunal = @Id_Tribunal";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Id_Tribunal", tribunal.Id_Tribunal);
-                    cmd.Parameters.AddWithValue("@PrimerNombreT", tribunal.PrimerNombreT);
-                    cmd.Parameters.AddWithValue("@SegundoNombreT", (object)tribunal.SegundoNombreT ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@PrimerApellidoT", tribunal.PrimerApellidoT);
-                    cmd.Parameters.AddWithValue("@SegundoApellidoT", (object)tribunal.SegundoApellidoT ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@PrimerNombre", tribunal.PrimerNombre);
+                    cmd.Parameters.AddWithValue("@SegundoNombre", (object)tribunal.SegundoNombre ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@PrimerApellido", tribunal.PrimerApellido);
+                    cmd.Parameters.AddWithValue("@SegundoApellido", (object)tribunal.SegundoApellido ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Tipo", tribunal.Tipo);
                     cmd.Parameters.AddWithValue("@Institucion", tribunal.Institucion);
-                    cmd.Parameters.AddWithValue("@Id_titulo", tribunal.Id_titulo);
+                    cmd.Parameters.AddWithValue("@Id_Titulo", tribunal.Id_Titulo);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -133,13 +133,13 @@ namespace _25_08_2024.Controladores
                             tribunal = new Tribunal
                             {
                                 Id_Tribunal = (int)reader["Id_Tribunal"],
-                                PrimerNombreT = (string)reader["PrimerNombreT"],
-                                SegundoNombreT = reader["SegundoNombreT"] as string,
-                                PrimerApellidoT = (string)reader["PrimerApellidoT"],
-                                SegundoApellidoT = reader["SegundoApellidoT"] as string,
+                                PrimerNombre = (string)reader["PrimerNombre"],
+                                SegundoNombre = reader["SegundoNombre"] as string,
+                                PrimerApellido = (string)reader["PrimerApellido"],
+                                SegundoApellido = reader["SegundoApellido"] as string,
                                 Tipo = (string)reader["Tipo"],
                                 Institucion = (string)reader["Institucion"],
-                                Id_titulo = (int)reader["Id_titulo"]
+                                Id_Titulo = (int)reader["Id_Titulo"]
                             };
                         }
                     }
