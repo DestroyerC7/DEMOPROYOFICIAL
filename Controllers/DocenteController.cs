@@ -1,4 +1,4 @@
-﻿using _26_08_2024.Modelos;
+﻿using DEMOPROY1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,12 +29,12 @@ namespace _26_08_2024.Controladores
             var existingDocente = docentes.FirstOrDefault(d => d.Id_Docente == docente.Id_Docente);
             if (existingDocente != null)
             {
-                existingDocente.PrimerNombreD = docente.PrimerNombreD;
-                existingDocente.SegundoNombreD = docente.SegundoNombreD;
-                existingDocente.PrimerApellidoD = docente.PrimerApellidoD;
-                existingDocente.SegundoApellidoD = docente.SegundoApellidoD;
+                existingDocente.PrimerNombre = docente.PrimerNombre;
+                existingDocente.SegundoNombre = docente.SegundoNombre;
+                existingDocente.PrimerApellido = docente.PrimerApellido;
+                existingDocente.SegundoApellido = docente.SegundoApellido;
                 existingDocente.Email = docente.Email;
-                existingDocente.Id_titulo = docente.Id_titulo;
+                existingDocente.Id_Titulo = docente.Id_Titulo;
             }
         }
 
