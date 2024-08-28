@@ -118,20 +118,20 @@ namespace DEMOPROY1.VIews
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {/*
             if (comboBox1.SelectedItem != null)
             {
                 TituloProfesional tituloSeleccionado = (TituloProfesional)comboBox1.SelectedItem;
                 // Aquí puedes usar tituloSeleccionado para obtener más datos si es necesario.
                 MessageBox.Show("Seleccionaste: " + tituloSeleccionado.Id_Titulo);
             }
-        }
+        */}
 
         private void TribunalForm_Load(object sender, EventArgs e)
-        {/*
-            comboBox1.DataSource = controller.CargarCombo();
+        {
+            comboBox1.DataSource = controller.ObtenerTitulo();
             comboBox1.DisplayMember = "nivel_academico";
             comboBox1.ValueMember = "id_titulo";
-        */}
+        }
     }
 }

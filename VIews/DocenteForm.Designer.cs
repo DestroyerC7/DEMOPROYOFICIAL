@@ -45,6 +45,7 @@
             this.btnactualizar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
             this.btnlimpiar = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDocentes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,32 +161,35 @@
             // 
             // btnagregar
             // 
+            this.btnagregar.BackColor = System.Drawing.Color.LawnGreen;
             this.btnagregar.Location = new System.Drawing.Point(54, 463);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(75, 23);
             this.btnagregar.TabIndex = 13;
             this.btnagregar.Text = "AGREGAR";
-            this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.UseVisualStyleBackColor = false;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
             // btnactualizar
             // 
+            this.btnactualizar.BackColor = System.Drawing.Color.Yellow;
             this.btnactualizar.Location = new System.Drawing.Point(198, 463);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(75, 23);
             this.btnactualizar.TabIndex = 14;
             this.btnactualizar.Text = "ACTUALIZAR";
-            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.UseVisualStyleBackColor = false;
             this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // btneliminar
             // 
+            this.btneliminar.BackColor = System.Drawing.Color.Red;
             this.btneliminar.Location = new System.Drawing.Point(339, 463);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(75, 23);
             this.btneliminar.TabIndex = 15;
             this.btneliminar.Text = "ELIMINAR";
-            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnlimpiar
@@ -198,11 +202,20 @@
             this.btnlimpiar.UseVisualStyleBackColor = true;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(589, 177);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 17;
+            // 
             // DocenteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 533);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnactualizar);
@@ -222,6 +235,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DocenteForm";
             this.Text = "DocenteForm";
+            this.Load += new System.EventHandler(this.DocenteForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgDocentes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,5 +261,6 @@
         private System.Windows.Forms.Button btnactualizar;
         private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

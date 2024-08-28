@@ -53,32 +53,35 @@
             // 
             // btnagregar
             // 
+            this.btnagregar.BackColor = System.Drawing.Color.Chartreuse;
             this.btnagregar.Location = new System.Drawing.Point(31, 501);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(98, 37);
             this.btnagregar.TabIndex = 0;
             this.btnagregar.Text = "AGREGAR";
-            this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.UseVisualStyleBackColor = false;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
             // btnactualizar
             // 
+            this.btnactualizar.BackColor = System.Drawing.Color.Yellow;
             this.btnactualizar.Location = new System.Drawing.Point(157, 501);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(119, 37);
             this.btnactualizar.TabIndex = 1;
             this.btnactualizar.Text = "ACTUALIZAR";
-            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.UseVisualStyleBackColor = false;
             this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // btneliminar
             // 
+            this.btneliminar.BackColor = System.Drawing.Color.Red;
             this.btneliminar.Location = new System.Drawing.Point(305, 501);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(92, 37);
             this.btneliminar.TabIndex = 2;
             this.btneliminar.Text = "ELIMINAR";
-            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnlimpiar

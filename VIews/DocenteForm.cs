@@ -17,6 +17,7 @@ namespace DEMOPROY1.VIews
         public DocenteForm()
         {
             InitializeComponent();
+            ActualizarListaDocentes();
         }
         private DocenteController controller = new DocenteController();
 
@@ -107,6 +108,13 @@ namespace DEMOPROY1.VIews
             txtSegundoApellido.Text = string.Empty;
             txtEmail.Text = string.Empty;
             //comboBoxTitulo.SelectedIndex = -1;
+        }
+
+        private void DocenteForm_Load(object sender, EventArgs e)
+        {
+            comboBox1.DataSource = controller.ObtenerTitulo();
+            comboBox1.DisplayMember = "nivel_academico";
+            comboBox1.ValueMember = "id_titulo";
         }
     }
 }
