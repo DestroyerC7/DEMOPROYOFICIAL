@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DEMOPROY1.Models
 {
-    internal class Postulante
+    public class Postulante
     {
         public int PostulanteId { get; set; }
         public int Codigo_Estudiante { get; set; }

@@ -17,7 +17,7 @@ namespace DEMOPROY1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new INDEX());
+            Application.Run(new TribunalForm());
         }
     }
 }
