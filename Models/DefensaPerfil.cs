@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DEMOPROY1.Models
 {
-    internal class DefensaPerfil
+    public class DefensaPerfil
     {
         public DateTime FechaDefensa { get; set; }
         public bool EstadoPerfil { get; set; }

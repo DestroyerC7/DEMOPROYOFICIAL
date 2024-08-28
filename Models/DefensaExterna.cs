@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DEMOPROY1.Models
 {
-    internal class DefensaExterna
+    public class DefensaExterna
     {
         public int Id_DefensaExterna { get; set; }
         public DateTime FechaDefensaExterna { get; set; }
