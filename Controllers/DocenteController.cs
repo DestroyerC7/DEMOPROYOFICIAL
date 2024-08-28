@@ -5,23 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace _26_08_2024.Controladores
 {
     public class DocenteController
     {
-        private string connectionString = "server=DESTROYER; database=DEMOPROY; Integrated Security=True; TrustServerCertificate=True;"; // Reemplaza esto con tu cadena de conexión a la base de datos
+        private SqlConnection conexion = new SqlConnection("server=DESTROYER; database=DEMOPROY; Integrated Security=True; TrustServerCertificate=True;");
 
         // Método para agregar un docente
         public void AgregarDocente(Docente docente)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "INSERT INTO DOCENTE (PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, Email, Id_Titulo) " +
                                "VALUES (@PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @Email, @Id_Titulo)";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 {
                     cmd.Parameters.AddWithValue("@PrimerNombre", docente.PrimerNombre);
                     cmd.Parameters.AddWithValue("@SegundoNombre", (object)docente.SegundoNombre ?? DBNull.Value);
@@ -32,7 +32,7 @@ namespace _26_08_2024.Controladores
 
                     cmd.ExecuteNonQuery();
                 }
-            }
+            conexion.Close();
         }
 
         // Método para obtener todos los docentes
@@ -40,12 +40,11 @@ namespace _26_08_2024.Controladores
         {
             List<Docente> docentes = new List<Docente>();
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "SELECT * FROM DOCENTE";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -62,23 +61,22 @@ namespace _26_08_2024.Controladores
                         };
                         docentes.Add(docente);
                     }
-                }
-            }
+               }
 
+            conexion.Close();
             return docentes;
         }
 
         // Método para actualizar un docente
         public void ActualizarDocente(Docente docente)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "UPDATE DOCENTE SET PrimerNombre = @PrimerNombre, SegundoNombre = @SegundoNombre, " +
                                "PrimerApellido = @PrimerApellido, SegundoApellido = @SegundoApellido, Email = @Email, " +
                                "Id_Titulo = @Id_Titulo WHERE Id_Docente = @Id_Docente";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 {
                     cmd.Parameters.AddWithValue("@Id_Docente", docente.Id_Docente);
                     cmd.Parameters.AddWithValue("@PrimerNombre", docente.PrimerNombre);
@@ -90,23 +88,22 @@ namespace _26_08_2024.Controladores
 
                     cmd.ExecuteNonQuery();
                 }
-            }
+            conexion.Close();
         }
 
         // Método para eliminar un docente
         public void EliminarDocente(int id)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "DELETE FROM DOCENTE WHERE Id_Docente = @Id_Docente";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 {
                     cmd.Parameters.AddWithValue("@Id_Docente", id);
                     cmd.ExecuteNonQuery();
                 }
-            }
+            conexion.Close();
         }
 
         // Método para obtener un docente por su ID
@@ -114,12 +111,11 @@ namespace _26_08_2024.Controladores
         {
             Docente docente = null;
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "SELECT * FROM DOCENTE WHERE Id_Docente = @Id_Docente";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 {
                     cmd.Parameters.AddWithValue("@Id_Docente", id);
 
@@ -140,9 +136,25 @@ namespace _26_08_2024.Controladores
                         }
                     }
                 }
-            }
+            conexion.Close();
 
             return docente;
+        }
+        public DataTable ObtenerTitulo()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                string consulta = "SELECT id_titulo , nivel_academico FROM TITULO_PROFESIONAL";
+                SqlCommand cmd = new SqlCommand(consulta, conexion);
+                SqlDataAdapter adaptador = new SqlDataAdapter(cmd);
+                adaptador.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener el titulo: " + ex.Message);
+            }
+            return dt;
         }
     }
 }

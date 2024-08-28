@@ -12,18 +12,17 @@ namespace DEMOPROY1.Controllers
 {
     public class TribunalController
     {
-        private string connectionString = "server=DESTROYER; database=DEMOPROY; Integrated Security=True; TrustServerCertificate=True;"; // Reemplaza esto con tu cadena de conexión a la base de datos
+        private SqlConnection conexion = new SqlConnection("server=DESTROYER; database=DEMOPROY; Integrated Security=True; TrustServerCertificate=True;");
 
         // Método para agregar un tribunal
         public void AgregarTribunal(Tribunal tribunal)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "INSERT INTO TRIBUNAL (PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, Tipo, Institucion, Id_titulo) " +
                                "VALUES (@PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @Tipo, @Institucion, @Id_titulo)";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 {
                     cmd.Parameters.AddWithValue("@PrimerNombre", tribunal.PrimerNombre);
                     cmd.Parameters.AddWithValue("@SegundoNombre", (object)tribunal.SegundoNombre ?? DBNull.Value);
@@ -35,25 +34,24 @@ namespace DEMOPROY1.Controllers
 
                     cmd.ExecuteNonQuery();
                 }
-            }
+            conexion.Close();
         }
 
         // Método para obtener todos los tribunales
-        public List<Tribunal> ObtenerTribunales()
+        public List<object> ObtenerTribunales()
         {
-            List<Tribunal> tribunales = new List<Tribunal>();
+            List<object> tribunales = new List<object>();
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "SELECT * FROM TRIBUNAL";
+            
+                conexion.Open();
+                string query = "SELECT * FROM TRIBUNAL inner join TITULO_PROFESIONAL on TRIBUNAL.Id_titulo = TITULO_PROFESIONAL.id_titulo";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Tribunal tribunal = new Tribunal
+                        tribunales.Add(new
                         {
                             Id_Tribunal = (int)reader["Id_Tribunal"],
                             PrimerNombre = (string)reader["PrimerNombre"],
@@ -62,27 +60,23 @@ namespace DEMOPROY1.Controllers
                             SegundoApellido = reader["SegundoApellido"] as string,
                             Tipo = (string)reader["Tipo"],
                             Institucion = (string)reader["Institucion"],
-                            Id_Titulo = (int)reader["Id_Titulo"]
-                        };
-                        tribunales.Add(tribunal);
+                            nivel_academico = (string)reader["nivel_academico"]
+                        });                        
                     }
                 }
-            }
-
+            conexion.Close();
             return tribunales;
         }
-
         // Método para actualizar un tribunal
         public void ActualizarTribunal(Tribunal tribunal)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "UPDATE TRIBUNAL SET PrimerNombre = @PrimerNombre, SegundoNombre = @SegundoNombre, " +
                                "PrimerApellido = @PrimerApellido, SegundoApellido = @SegundoApellido, Tipo = @Tipo, " +
                                "Institucion = @Institucion, Id_titulo = @Id_titulo WHERE Id_Tribunal = @Id_Tribunal";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 {
                     cmd.Parameters.AddWithValue("@Id_Tribunal", tribunal.Id_Tribunal);
                     cmd.Parameters.AddWithValue("@PrimerNombre", tribunal.PrimerNombre);
@@ -95,23 +89,22 @@ namespace DEMOPROY1.Controllers
 
                     cmd.ExecuteNonQuery();
                 }
-            }
+            conexion.Close();
         }
 
         // Método para eliminar un tribunal
         public void EliminarTribunal(int id)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "DELETE FROM TRIBUNAL WHERE Id_Tribunal = @Id_Tribunal";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 {
                     cmd.Parameters.AddWithValue("@Id_Tribunal", id);
                     cmd.ExecuteNonQuery();
                 }
-            }
+            conexion.Close();
         }
 
         // Método para obtener un tribunal por su ID
@@ -119,12 +112,11 @@ namespace DEMOPROY1.Controllers
         {
             Tribunal tribunal = null;
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
+            
+                conexion.Open();
                 string query = "SELECT * FROM TRIBUNAL WHERE Id_Tribunal = @Id_Tribunal";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conexion))
                 {
                     cmd.Parameters.AddWithValue("@Id_Tribunal", id);
 
@@ -146,8 +138,8 @@ namespace DEMOPROY1.Controllers
                         }
                     }
                 }
-            }
 
+            conexion.Close();
             return tribunal;
         }
         /*
@@ -159,24 +151,24 @@ namespace DEMOPROY1.Controllers
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
-        }
+        }*/
 
-        public DataTable ObtenerDocente()
+        public DataTable ObtenerTitulo()
         {
             DataTable dt = new DataTable();
             try
             {
-                string consulta = "SELECT Id_Docente , PrimerNombre FROM DOCENTE";
+                string consulta = "SELECT id_titulo , nivel_academico FROM TITULO_PROFESIONAL";
                 SqlCommand cmd = new SqlCommand(consulta, conexion);
                 SqlDataAdapter adaptador = new SqlDataAdapter(cmd);
                 adaptador.Fill(dt);
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al obtener el docente: " + ex.Message);
+                throw new Exception("Error al obtener el titulo: " + ex.Message);
             }
             return dt;
-        }*/
+        }
     }
 
 }
