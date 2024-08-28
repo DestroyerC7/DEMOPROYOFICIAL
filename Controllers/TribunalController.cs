@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using DEMOPROY1.Models;
 using Microsoft.Data.SqlClient;
 
@@ -148,6 +150,33 @@ namespace DEMOPROY1.Controllers
 
             return tribunal;
         }
+        /*
+        public DataTable CargarCombo()
+        {
+            //using (SqlConnection conn = new SqlConnection(connectionString))
+            SqlDataAdapter da = new SqlDataAdapter("SP_CARGARCOMBOBOX",connectionString.LeerCadena());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable ObtenerDocente()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                string consulta = "SELECT Id_Docente , PrimerNombre FROM DOCENTE";
+                SqlCommand cmd = new SqlCommand(consulta, conexion);
+                SqlDataAdapter adaptador = new SqlDataAdapter(cmd);
+                adaptador.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener el docente: " + ex.Message);
+            }
+            return dt;
+        }*/
     }
 
 }
