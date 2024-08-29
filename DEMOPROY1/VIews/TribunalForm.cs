@@ -29,13 +29,8 @@ namespace DEMOPROY1.VIews
         }
         
         private void LlenarComboBoxTitulo()
-        {/*
-            List<TituloProfesional> titulos = ObtenerTitulos(); // Obtén la lista de títulos desde la base de datos.
-
-            comboBox1.DataSource = titulos; // Establece la fuente de datos del ComboBox.
-            comboBox1.DisplayMember = "Titulo"; // Configura qué propiedad del objeto TituloProfesional mostrar.
-            comboBox1.ValueMember = "Id"; // Configura qué propiedad del objeto TituloProfesional será el valor asociado.
-        */}
+        {
+        }
 
         private void ActualizarListaTribunales()
         {
@@ -68,7 +63,7 @@ namespace DEMOPROY1.VIews
             if (dtgTribunales.SelectedRows.Count > 0)
             {
                 var selectedRow = dtgTribunales.SelectedRows[0];
-                var tribunal = (Tribunal)selectedRow.DataBoundItem;
+                var tribunal = (TribunalTitulo)selectedRow.DataBoundItem;
 
                 tribunal.PrimerNombre = txtPrimerNombre.Text;
                 tribunal.SegundoNombre = txtSegundoNombre.Text;
@@ -94,7 +89,7 @@ namespace DEMOPROY1.VIews
             if (dtgTribunales.SelectedRows.Count > 0)
             {
                 var selectedRow = dtgTribunales.SelectedRows[0];
-                var tribunal = (Tribunal)selectedRow.DataBoundItem;
+                var tribunal = (TribunalTitulo)selectedRow.DataBoundItem;
 
                 controller.EliminarTribunal(tribunal.Id_Tribunal);
                 ActualizarListaTribunales();

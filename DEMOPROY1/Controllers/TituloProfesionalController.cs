@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,6 +50,7 @@ namespace _26_08_2024.Controladores
         }*/
     }
 }
+/*
 =======
 ﻿using System;
 using System.Collections.Generic;
@@ -101,7 +101,8 @@ namespace _26_08_2024.Controladores
             {
                 titulosProfesionales.Remove(titulo);
             }
-        }*/
+        }
     }
 }
 >>>>>>> a04a6251e16735818b5cd903783d8e8b0b0da0ae
+*/

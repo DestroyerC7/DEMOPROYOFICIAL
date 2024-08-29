@@ -204,12 +204,15 @@
     <Compile Include="Models\DefensaExterna.cs" />
     <Compile Include="Models\DefensaInterna.cs" />
     <Compile Include="Models\DefensaPerfil.cs" />
+    <Compile Include="Models\DefPerfil.cs" />
     <Compile Include="Models\Docente.cs" />
+    <Compile Include="Models\DocenteTitulo.cs" />
     <Compile Include="Models\Perfil.cs" />
     <Compile Include="Models\Postulante.cs" />
     <Compile Include="Models\Proyecto.cs" />
     <Compile Include="Models\TituloProfesional.cs" />
     <Compile Include="Models\Tribunal.cs" />
+    <Compile Include="Models\TribunalTitulo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VIews\DEFENSAINTERNA.cs">

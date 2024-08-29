@@ -17,7 +17,7 @@ namespace DEMOPROY1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TribunalForm());
+            Application.Run(new DocenteForm());
         }
     }
 }
