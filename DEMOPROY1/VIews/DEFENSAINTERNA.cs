@@ -46,8 +46,8 @@ namespace DEMOPROY1.VIews
                 MessageBox.Show("Error al cargar los tribunales: " + ex.Message);
             }
         }
-
-        private void CargarTribunal2()
+        
+            private void CargarTribunal2()
             {
             try
             {
