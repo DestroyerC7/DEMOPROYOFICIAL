@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace DEMOPROY1.Models
 {
-    public class Tribunal
+    public class DocenteTitulo
     {
-        public int Id_Tribunal { get; set; }
+        public int Id_Docente { get; set; }
         public string PrimerNombre { get; set; }
         public string SegundoNombre { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
-        public string Tipo { get; set; }
-        public string Institucion { get; set; }
+        public string Email { get; set; }
         public int Id_Titulo { get; set; }
-
-        public TituloProfesional TituloProfesional; /*{ get; set;}*/
+        public string nivel_academico { get; set; }
     }
 }

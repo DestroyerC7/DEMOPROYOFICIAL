@@ -10,8 +10,8 @@ namespace DEMOPROY1.Models
     {
         public int Id_DefensaExterna { get; set; }
         public DateTime FechaDefensaExterna { get; set; }
-        public bool Aprobado { get; set; }
-        public bool Calficacion { get; set; }
+        public bool AProbado { get; set; }
+        public int Calficacion { get; set; }
         public int Id_Tribunal1 { get; set; }
         public int Id_Tribunal2 { get; set; }
         public int Id_Tribunal3 { get; set; }
