@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,7 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CABALLOSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CABALLOSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\DefensaInternaController.cs" />
+    <Compile Include="Controllers\DefensaExternaController.cs" />
     <Compile Include="Controllers\ProyectoController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\PostulanteController.cs" />
@@ -90,6 +97,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DEMOPROYDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DEMOPROYDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEMOPROYDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEMOPROYDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEMOPROYDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Models\Carrera.cs" />
     <Compile Include="Models\DefensaExterna.cs" />
     <Compile Include="Models\DefensaInterna.cs" />
@@ -102,6 +119,12 @@
     <Compile Include="Models\Tribunal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIews\DEFENSAEXTERNA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIews\DEFENSAEXTERNA.Designer.cs">
+      <DependentUpon>DEFENSAEXTERNA.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIews\DEFENSAINTERNA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,7 +181,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VIews\DEFENSAEXTERNA.resx">
+      <DependentUpon>DEFENSAEXTERNA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VIews\DEFENSAINTERNA.resx">
       <DependentUpon>DEFENSAINTERNA.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +210,17 @@
     <EmbeddedResource Include="VIews\TUTORESYTUTORADOS.resx">
       <DependentUpon>TUTORESYTUTORADOS.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CABALLOSDataSet.xsc">
+      <DependentUpon>CABALLOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CABALLOSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CABALLOSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CABALLOSDataSet.xss">
+      <DependentUpon>CABALLOSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DEMOPROYDataSet.xsc">
       <DependentUpon>DEMOPROYDataSet.xsd</DependentUpon>
     </None>
@@ -271,6 +309,28 @@
     <None Include="DEMOPROYDataSet7.xss">
       <DependentUpon>DEMOPROYDataSet7.xsd</DependentUpon>
     </None>
+    <None Include="DEMOPROYDataSet8.xsc">
+      <DependentUpon>DEMOPROYDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DEMOPROYDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DEMOPROYDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DEMOPROYDataSet8.xss">
+      <DependentUpon>DEMOPROYDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DEMOPROYDataSet9.xsc">
+      <DependentUpon>DEMOPROYDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DEMOPROYDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DEMOPROYDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DEMOPROYDataSet9.xss">
+      <DependentUpon>DEMOPROYDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -284,6 +344,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\UPDS.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

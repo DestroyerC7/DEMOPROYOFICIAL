@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DEMOPROY1.Models
 {
-    internal class TituloProfesional
+    public class TituloProfesional
     {
             public int Id_Titulo { get; set; }
             public string Nombre { get; set; }
