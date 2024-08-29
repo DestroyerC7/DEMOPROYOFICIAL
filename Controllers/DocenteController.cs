@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using DEMOPROY1.Models;
 using System;
 using System.Collections.Generic;
@@ -15,7 +14,7 @@ namespace _26_08_2024.Controladores
         private SqlConnection conexion = new SqlConnection("server=DESTROYER; database=DEMOPROY; Integrated Security=True; TrustServerCertificate=True;");
 
         // Método para agregar un docente
-        public void AgregarDocente(Docente docente)
+        public void AgregarDocente(DocenteTitulo docente)
         {
             
                 conexion.Open();
@@ -37,28 +36,29 @@ namespace _26_08_2024.Controladores
         }
 
         // Método para obtener todos los docentes
-        public List<Docente> ObtenerDocentes()
+        public List<DocenteTitulo> ObtenerDocentes()
         {
-            List<Docente> docentes = new List<Docente>();
+            List<DocenteTitulo> docentes = new List<DocenteTitulo>();
 
             
                 conexion.Open();
-                string query = "SELECT * FROM DOCENTE";
+                string query = "SELECT * FROM DOCENTE inner join TITULO_PROFESIONAL on DOCENTE.Id_titulo = TITULO_PROFESIONAL.id_titulo";
 
                 using (SqlCommand cmd = new SqlCommand(query, conexion))
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Docente docente = new Docente
-                        {
+                    DocenteTitulo docente = new DocenteTitulo
+                    {
                             Id_Docente = (int)reader["Id_Docente"],
                             PrimerNombre = (string)reader["PrimerNombre"],
                             SegundoNombre = reader["SegundoNombre"] as string,
                             PrimerApellido = (string)reader["PrimerApellido"],
                             SegundoApellido = reader["SegundoApellido"] as string,
                             Email = (string)reader["Email"],
-                            Id_Titulo = (int)reader["Id_Titulo"]
+                            Id_Titulo = (int)reader["Id_Titulo"],
+                            nivel_academico = (string)reader["nivel_academico"]
                         };
                         docentes.Add(docente);
                     }
@@ -69,7 +69,7 @@ namespace _26_08_2024.Controladores
         }
 
         // Método para actualizar un docente
-        public void ActualizarDocente(Docente docente)
+        public void ActualizarDocente(DocenteTitulo docente)
         {
             
                 conexion.Open();
@@ -159,6 +159,7 @@ namespace _26_08_2024.Controladores
         }
     }
 }
+/*
 =======
 ﻿using _26_08_2024.Modelos;
 using System;
@@ -212,3 +213,4 @@ namespace _26_08_2024.Controladores
     }
 }
 >>>>>>> a04a6251e16735818b5cd903783d8e8b0b0da0ae
+*/

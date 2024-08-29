@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -39,9 +38,9 @@ namespace DEMOPROY1.Controllers
         }
 
         // Método para obtener todos los tribunales
-        public List<object> ObtenerTribunales()
+        public List<TribunalTitulo> ObtenerTribunales()
         {
-            List<object> tribunales = new List<object>();
+            List<TribunalTitulo> tribunales = new List<TribunalTitulo>();
 
             
                 conexion.Open();
@@ -52,24 +51,28 @@ namespace DEMOPROY1.Controllers
                 {
                     while (reader.Read())
                     {
-                        tribunales.Add(new
-                        {
-                            Id_Tribunal = (int)reader["Id_Tribunal"],
-                            PrimerNombre = (string)reader["PrimerNombre"],
-                            SegundoNombre = reader["SegundoNombre"] as string,
-                            PrimerApellido = (string)reader["PrimerApellido"],
-                            SegundoApellido = reader["SegundoApellido"] as string,
-                            Tipo = (string)reader["Tipo"],
-                            Institucion = (string)reader["Institucion"],
-                            nivel_academico = (string)reader["nivel_academico"]
-                        });                        
+                    TribunalTitulo tribunal = new TribunalTitulo
+                    {
+                        Id_Tribunal = (int)reader["Id_Tribunal"],
+                        PrimerNombre = (string)reader["PrimerNombre"],
+                        SegundoNombre = reader["SegundoNombre"] as string,
+                        PrimerApellido = (string)reader["PrimerApellido"],
+                        SegundoApellido = reader["SegundoApellido"] as string,
+                        Tipo = (string)reader["Tipo"],
+                        Institucion = (string)reader["Institucion"],
+                        Id_Titulo = (int)reader["Id_Titulo"],
+                        nivel_academico = (string)reader["nivel_academico"]
+                        //TituloProfesional = new TituloProfesional().NivelAcademico
+                    };
+                        tribunales.Add(tribunal);
                     }
                 }
+
             conexion.Close();
             return tribunales;
         }
         // Método para actualizar un tribunal
-        public void ActualizarTribunal(Tribunal tribunal)
+        public void ActualizarTribunal(TribunalTitulo tribunal)
         {
             
                 conexion.Open();
@@ -173,7 +176,7 @@ namespace DEMOPROY1.Controllers
     }
 
 }
-=======
+/*
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -327,4 +330,4 @@ namespace _25_08_2024.Controladores
     }
 
 }
->>>>>>> a04a6251e16735818b5cd903783d8e8b0b0da0ae
+*/
