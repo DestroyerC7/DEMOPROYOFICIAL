@@ -129,6 +129,7 @@
             this.txtCalificacion.Name = "txtCalificacion";
             this.txtCalificacion.Size = new System.Drawing.Size(100, 26);
             this.txtCalificacion.TabIndex = 8;
+            this.txtCalificacion.TextChanged += new System.EventHandler(this.txtCalificacion_TextChanged);
             // 
             // cmbPostulantes
             // 

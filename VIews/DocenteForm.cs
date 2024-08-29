@@ -44,7 +44,7 @@ namespace DEMOPROY1.VIews
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-            var docente = new Docente
+            var docente = new DocenteTitulo
             {
                 PrimerNombre = txtPrimerNombre.Text,
                 SegundoNombre = txtSegundoNombre.Text,
@@ -64,7 +64,7 @@ namespace DEMOPROY1.VIews
             if (dtgDocentes.SelectedRows.Count > 0)
             {
                 var selectedRow = dtgDocentes.SelectedRows[0];
-                var docente = (Docente)selectedRow.DataBoundItem;
+                var docente = (DocenteTitulo)selectedRow.DataBoundItem;
 
                 docente.PrimerNombre = txtPrimerNombre.Text;
                 docente.SegundoNombre = txtSegundoNombre.Text;
@@ -88,7 +88,7 @@ namespace DEMOPROY1.VIews
             if (dtgDocentes.SelectedRows.Count > 0)
             {
                 var selectedRow = dtgDocentes.SelectedRows[0];
-                var docente = (Docente)selectedRow.DataBoundItem;
+                var docente = (DocenteTitulo)selectedRow.DataBoundItem;
 
                 controller.EliminarDocente(docente.Id_Docente);
                 ActualizarListaDocentes();
