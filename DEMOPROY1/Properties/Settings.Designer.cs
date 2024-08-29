@@ -33,5 +33,16 @@ namespace DEMOPROY1.Properties {
                 return ((string)(this["DEMOPROYConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-V980KNVQ\\SQLEXPRESS;Initial Catalog=CABALLOS;Integrated Securi" +
+            "ty=True")]
+        public string CABALLOSConnectionString {
+            get {
+                return ((string)(this["CABALLOSConnectionString"]));
+            }
+        }
     }
 }

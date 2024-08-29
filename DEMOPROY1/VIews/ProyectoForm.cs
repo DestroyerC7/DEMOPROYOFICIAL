@@ -314,6 +314,11 @@ namespace DEMOPROY1.VIews
         {
 
         }
+
+        private void txtCalificacion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
     

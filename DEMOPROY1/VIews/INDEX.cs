@@ -18,6 +18,8 @@ namespace DEMOPROY1.VIews
         private ESTUDIANTESPENDIENTES estudiantesPendientes;
         private REPORTEPROYECTOS proyectoSinActa;
         private TUTORESYTUTORADOS tutorytutorado;
+        private DEFENSAINTERNA defensaInterna;
+        private DEFENSAEXTERNA defensaExterna;
         public INDEX()
         {
             InitializeComponent();
@@ -27,10 +29,15 @@ namespace DEMOPROY1.VIews
             estudiantesPendientes = new ESTUDIANTESPENDIENTES();
             proyectoSinActa = new REPORTEPROYECTOS();
             tutorytutorado = new TUTORESYTUTORADOS();
+            defensaInterna = new DEFENSAINTERNA();
+            defensaExterna = new DEFENSAEXTERNA();
+
         }
 
         private void INDEX_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'cABALLOSDataSet.CABALLOS' Puede moverla o quitarla según sea necesario.
+            this.cABALLOSTableAdapter.Fill(this.cABALLOSDataSet.CABALLOS);
             // TODO: esta línea de código carga datos en la tabla 'dEMOPROYDataSet3.VISTA_PROYECTOS_FALTANTES_ACTAS' Puede moverla o quitarla según sea necesario.
             this.vISTA_PROYECTOS_FALTANTES_ACTASTableAdapter.Fill(this.dEMOPROYDataSet3.VISTA_PROYECTOS_FALTANTES_ACTAS);
 
@@ -65,6 +72,18 @@ namespace DEMOPROY1.VIews
         private void button6_Click(object sender, EventArgs e)
         {
             tutorytutorado.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            defensaInterna = new DEFENSAINTERNA();
+            defensaInterna.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            defensaExterna = new DEFENSAEXTERNA();
+            defensaExterna.Show();
         }
     }
 }
